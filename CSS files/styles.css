@@ -1,0 +1,212 @@
+body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f3f6fc;
+      color: #1e1e1e;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .btn {
+      background-color: #1e72f2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hero-text h1 span {
+      color: #1e72f2;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .hero-image img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .service-highlight {
+  background-color: #f3f6fc;
+  padding: 60px 40px;
+}
+
+.service-highlight-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.service-image img {
+  max-width: 100%;
+  border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.highlight-text {
+  max-width: 600px;
+}
+
+.highlight-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.highlight-text p {
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.highlight-item h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.highlight-item p {
+  font-size: 0.9rem;
+  color: #555;
+} footer {
+      background-color: #e9f1ff;
+      color: #333;
+      font-size: 14px;
+      padding: 20px;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      max-width: 200px;
+      margin: 10px 0;
+    }
+    .footer-section img{
+      /* border-radius: 50%; */
+      /* border-radius: top 60%; */
+    }
+
+    .footer-section h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section li {
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+    }
+     a {
+      color: #246bfd;
+      text-decoration: none;
+    }
+    .myButton{
+      /* text-decoration: underline; */
+      font-weight: bold;
+      cursor: pointer;
+    }.myButton :hover{
+      text-decoration: underline;
+    } .services {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: #6e48aa;
+            margin-bottom: 20px;
+        }
+        
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .service-description {
+            color: #666;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+          }
