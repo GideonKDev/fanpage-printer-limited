@@ -193,3 +193,75 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// // Contact form submission with popup
+// document.addEventListener('DOMContentLoaded', function() {
+//     const contactForm = document.getElementById('contactForm');
+//     const messagePopup = document.getElementById('messagePopup');
+//     const popupClose = document.querySelector('.popup-close');
+    
+//     if (contactForm) {
+//         contactForm.addEventListener('submit', function(e) {
+//             e.preventDefault();
+            
+//             // Get form data
+//             const formData = new FormData(this);
+//             const submitBtn = this.querySelector('button[type="submit"]');
+//             const originalText = submitBtn.innerHTML;
+            
+//             // Show loading state
+//             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+//             submitBtn.disabled = true;
+            
+//             // Simulate form submission (replace with actual fetch if needed)
+//             setTimeout(() => {
+//                 // Show success message
+//                 showMessagePopup('Message Sent', 'Thank you for your message! We will get back to you within 24 hours.', 'success');
+                
+//                 // Reset form
+//                 contactForm.reset();
+                
+//                 // Restore button
+//                 submitBtn.innerHTML = originalText;
+//                 submitBtn.disabled = false;
+                
+//                 // Actually submit the form to FormSubmit
+//                 // Uncomment the line below to enable actual form submission
+//                 // contactForm.submit();
+                
+//             }, 1500);
+//         });
+//     }
+    
+//     // Close popup when clicking close button
+//     if (popupClose) {
+//         popupClose.addEventListener('click', function() {
+//             messagePopup.style.display = 'none';
+//         });
+//     }
+    
+//     // Close popup when clicking outside
+//     window.addEventListener('click', function(e) {
+//         if (e.target === messagePopup) {
+//             messagePopup.style.display = 'none';
+//         }
+//     });
+    
+//     // Function to show message popup
+//     function showMessagePopup(title, message, type = 'success') {
+//         const popupContent = messagePopup.querySelector('.popup-content');
+//         popupContent.querySelector('h3').textContent = title;
+//         popupContent.querySelector('p').textContent = message;
+        
+//         // Set type (success/error)
+//         messagePopup.className = 'message-popup ' + type;
+        
+//         // Show popup
+//         messagePopup.style.display = 'block';
+        
+//         // Auto hide after 5 seconds
+//         setTimeout(() => {
+//             messagePopup.style.display = 'none';
+//         }, 5000);
+//     }
+// });

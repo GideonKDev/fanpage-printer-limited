@@ -74,57 +74,71 @@
   </section>
 
   <!-- Contact Form Section -->
-  <section class="contact-form-section">
-    <div class="container">
-      <div class="form-container">
-        <h2>Send Us a Message</h2>
-        <p>Have a question or need a quote? We'll get back to you within 24 hours.</p>
+<section class="contact-form-section">
+  <div class="container">
+    <div class="form-container">
+      <h2>Send Us a Message</h2>
+      <p>Have a question or need a quote? We'll get back to you within 24 hours.</p>
+      
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/kiruigideon2006@gmail.com" method="POST">
+        <!-- FormSubmit Configuration -->
+        <input type="hidden" name="_subject" value="New Contact Form Submission - Fanpage Printers">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
         
-        <form class="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-          </div>
-          
+        <div class="form-row">
           <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
           </div>
-          
           <div class="form-group">
-            <label for="service">Service Needed</label>
-            <select id="service" name="service">
-              <option value="">Select a service</option>
-              <option value="printing">Printing Services</option>
-              <option value="graphic-design">Graphic Design</option>
-              <option value="windows-installation">Windows Installation</option>
-              <option value="linux-installation">Linux Installation</option>
-              <option value="web-design">Web Design</option>
-              <option value="cyber-cafe">Cyber Cafe Services</option>
-              <option value="it-support">IT Support</option>
-              <option value="other">Other</option>
-            </select>
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
           </div>
-          
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or inquiry..."></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn-primary">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
-      </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="printing">Printing Services</option>
+            <option value="graphic-design">Graphic Design</option>
+            <option value="windows-installation">Windows Installation</option>
+            <option value="linux-installation">Linux Installation</option>
+            <option value="web-design">Web Design</option>
+            <option value="cyber-cafe">Cyber Cafe Services</option>
+            <option value="it-support">IT Support</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or inquiry..."></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- Message Popup -->
+<!-- <div id="messagePopup" class="message-popup">
+  <div class="popup-content">
+    <span class="popup-close">&times;</span>
+    <h3>Message Sent</h3>
+    <p>Thank you for your message! We will get back to you within 24 hours.</p>
+  </div>
+</div> -->
   <!-- Team Section -->
   <section class="team-section" id="team">
     <div class="container">

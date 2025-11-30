@@ -802,4 +802,67 @@ select:focus,
 textarea:focus {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
+}/* Message Popup Styles */
+.message-popup {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  border-left: 4px solid #1e72f2;
+  animation: slideInLeft 0.3s ease;
+}
+
+.popup-content {
+  padding: 20px;
+  position: relative;
+  min-width: 300px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+  font-weight: bold;
+}
+
+.popup-close:hover {
+  color: #333;
+}
+
+.popup-content h3 {
+  margin: 0 0 10px 0;
+  color: #1e72f2;
+  font-size: 1.2rem;
+}
+
+.popup-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.message-popup.success {
+  border-left-color: #28a745;
+}
+
+.message-popup.error {
+  border-left-color: #dc3545;
 }
