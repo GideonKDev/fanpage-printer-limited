@@ -1,423 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Fanpage Printers Limited</title>
+    <meta
+      name="description"
+      content="Professional printing, graphic design, cyber cafe, and IT services in Kericho, Kenya"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Fanpage Printers Limited</title>
-  <meta name="description"
-    content="Professional printing, graphic design, cyber cafe, and IT services in Kericho, Kenya">
+    <!-- ===== FAVICON - LETTER F ===== -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='15' fill='%231e72f2'/><text x='50' y='68' font-family='Arial, sans-serif' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>F</text></svg>"
+    />
+    <!-- ===== END FAVICON ===== -->
 
-  <!-- ===== FAVICON - LETTER F ===== -->
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='15' fill='%231e72f2'/><text x='50' y='68' font-family='Arial, sans-serif' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>F</text></svg>">
-  <!-- ===== END FAVICON ===== -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/CSS%20files/contact.css" />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="/CSS files/contact.css">
-</head>
-
-<body>
-
-  <!-- Header -->
-  <header>
-    <div class="container header-container">
-      <div class="logo">
-        <a href="/index.html"><img src="/images/FANPAGE STICKERS_page-0001.jpg" alt="Fanpage Printers Logo"></a>
-      </div>
-
-      <!-- Mobile Menu Toggle -->
-      <button class="mobile-menu-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="nav-menu">
-        <a href="/index.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
-        <a href="/HTML files/services.html" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
-        <a href="/HTML files/gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
-        <a href="/HTML files/contact.html" class="nav-link active cta-button"><i class="fas fa-phone-alt"></i> Contact
-          Us</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Contact Hero Section -->
-  <section class="contact-hero">
-    <div class="container">
-      <div class="contact-hero-content">
-        <h1>Get In Touch With Our Team</h1>
-        <p class="hero-subtitle">We're here to help you with printing, computer services, software setup, and more.
-          Reach out to any of our friendly staff below:</p>
-
-        <div class="quick-contact">
-          <div class="quick-contact-item">
-            <i class="fas fa-phone"></i>
-            <div>
-              <h4>Call Us</h4>
-              <a href="tel:+254725410024">+254725 410 024</a>
-            </div>
-          </div>
-          <div class="quick-contact-item">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4>Email Us</h4>
-              <a href="mailto:fanpagecyber@gmail.com">fanpagecyber@gmail.com</a>
-            </div>
-          </div>
-          <div class="quick-contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <h4>Visit Us</h4>
-              <span>Kericho, Kenya</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Form Section -->
-  <section class="contact-form-section">
-    <div class="container">
-      <div class="form-container">
-        <h2>Send Us a Message</h2>
-        <p>Have a question or need a quote? We'll get back to you within 24 hours.</p>
-
-        <form class="contact-form" id="contactForm" action="https://formsubmit.co/kiruigideon2006@gmail.com"
-          method="POST">
-          <!-- FormSubmit Configuration -->
-          <input type="hidden" name="_subject" value="New Contact Form Submission - Fanpage Printers">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="_honey" style="display:none">
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-
-          <div class="form-group">
-            <label for="service">Service Needed</label>
-            <select id="service" name="service">
-              <option value="">Select a service</option>
-              <option value="printing">Printing Services</option>
-              <option value="graphic-design">Graphic Design</option>
-              <option value="windows-installation">Windows Installation</option>
-              <option value="linux-installation">Linux Installation</option>
-              <option value="web-design">Web Design</option>
-              <option value="cyber-cafe">Cyber Cafe Services</option>
-              <option value="it-support">IT Support</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="5" required
-              placeholder="Tell us about your project or inquiry..."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Message Popup -->
-  <div id="messagePopup" class="message-popup">
-    <div class="popup-content">
-      <span class="popup-close">&times;</span>
-      <h3>Message Sent</h3>
-      <p>Thank you for your message! We will get back to you within 24 hours.</p>
-    </div>
-  </div>
-  <!-- Team Section -->
-  <section class="team-section" id="team">
-    <div class="container">
-      <div class="section-header">
-        <h2>Meet Our Team</h2>
-        <p>Our dedicated professionals are ready to assist you with all your technical and creative needs</p>
-      </div>
-
-      <div class="contact-staff-grid">
-        <!-- Staff Member 1 -->
-        <div class="staff-card">
-          <div class="staff-image">
-            <img class="profile" src="/images/vinny.jpeg" alt="Kiplangat Ngeno - Founder & CEO">
-            <div class="staff-overlay">
-              <div class="social-links">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="mailto:kiplangattvincent@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff-info">
-            <h3>Kiplangat Ngeno</h3>
-            <p class="staff-role">Founder & CEO</p>
-            <p class="staff-department">Lead Developer & IT Consultant</p>
-
-            <div class="contact-details">
-              <a href="tel:+254725410024" class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+254725 410 024</span>
-              </a>
-              <a href="mailto:kiplangattvincent@gmail.com" class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>kiplangattvincent@gmail.com</span>
-              </a>
-            </div>
-
-            <div class="staff-bio">
-              <h4><i class="fas fa-briefcase"></i> About</h4>
-              <p>Kiplangat Ngeno is the visionary founder and CEO of Fanpage Printers Limited. As the driving force
-                behind the company, he oversees every aspect of operations — from high-level tech strategy to client
-                service excellence. A master in systems deployment, Linux installations, software engineering, and
-                digital transformation, he brings bold ideas to life with precision. Known for his leadership,
-                innovation, and hands-on expertise, Ngeno doesn't just run Fanpage — he defines its future.</p>
-            </div>
-          </div>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <a href="/index.html"
+            ><img
+              src="/images/FANPAGE STICKERS_page-0001.jpg"
+              alt="Fanpage Printers Logo"
+          /></a>
         </div>
 
-        <!-- Staff Member 2 -->
-        <div class="staff-card">
-          <div class="staff-image">
-            <img class="profile" src="/images/kevin.jpeg" alt="Kipkoech Kevin - Lead Graphic Designer">
-            <div class="staff-overlay">
-              <div class="social-links">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="mailto:evershynegraphixs@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff-info">
-            <h3>Kipkoech Kevin</h3>
-            <p class="staff-role">Lead Graphic Designer</p>
-            <p class="staff-department">Brand & Media Director</p>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-            <div class="contact-details">
-              <a href="tel:+254797617455" class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+254797 617 455</span>
-              </a>
-              <a href="mailto:evershynegraphixs@gmail.com" class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>evershynegraphixs@gmail.com</span>
-              </a>
-            </div>
-
-            <div class="staff-bio">
-              <h4><i class="fas fa-briefcase"></i> About</h4>
-              <p>Leads all branding and creative design work at Fanpage. Expert in logo design, posters, banners, and
-                visual storytelling through digital art. He also handles professional software installations, system
-                optimization, and computer hardware repair & maintenance with precision and care.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Staff Member 3 -->
-        <div class="staff-card">
-          <div class="staff-image">
-            <img class="profile" src="/images/kirui Gideon.jpeg" alt="Kirui Gideon - Tech Solutions Strategist">
-            <div class="staff-overlay">
-              <div class="social-links">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="mailto:kiruigideon2006@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff-info">
-            <h3>Kirui Gideon</h3>
-            <p class="staff-role">Tech Solutions Strategist</p>
-            <p class="staff-department">Digital Wizard & Systems Guru</p>
-
-            <div class="contact-details">
-              <a href="tel:+254115670811" class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+254115 670 811</span>
-              </a>
-              <a href="mailto:kiruigideon2006@gmail.com" class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>kiruigideon2006@gmail.com</span>
-              </a>
-            </div>
-
-            <div class="staff-bio">
-              <h4><i class="fas fa-briefcase"></i> About</h4>
-              <p>Kirui is the brain behind Fanpage's digital evolution. He handles everything from designing responsive
-                websites and automating workflows with batch scripts, to advanced system-level tasks like Linux
-                installations (Kali, Ubuntu, Fedora), dual-boot setups, and Android optimization using ADB. He's the
-                reason tech works smoothly behind the scenes — a true maestro in command.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Staff Member 4 -->
-        <div class="staff-card">
-          <div class="staff-image">
-            <img class="profile" src="/images/humphrey.jpeg" alt="Kipkoech Humphrey - System Technician">
-            <div class="staff-overlay">
-              <div class="social-links">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="mailto:humphrey.kirui254@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff-info">
-            <h3>Kipkoech Humphrey</h3>
-            <p class="staff-role">System Strategist</p>
-            <p class="staff-department">Digital Systems Strategist</p>
-
-            <div class="contact-details">
-              <a href="tel:+254703895303" class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+254703 895 303</span>
-              </a>
-              <a href="mailto:humphrey.kirui254@gmail.com" class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>humphrey.kirui254@gmail.com</span>
-              </a>
-            </div>
-
-            <div class="staff-bio">
-              <h4><i class="fas fa-briefcase"></i> About</h4>
-              <p>Humphrey is the systems technician who makes tech look easy. He's in charge of all printing operations
-                at Fanpage, ensuring every document, photo, and banner comes out sharp and on time. From Linux and
-                Windows installations to system recovery and diagnostics, he keeps both machines and services running
-                smoothly. Calm, precise, and reliable — he's the engine room of operations.</p>
-            </div>
-          </div>
-        </div>
+        <nav class="nav-menu">
+          <a href="/index.html" class="nav-link"
+            ><i class="fas fa-info-circle"></i> About Us</a
+          >
+          <a href="/HTML files/services.html" class="nav-link"
+            ><i class="fas fa-cogs"></i> Services</a
+          >
+          <a href="/HTML files/gallery.html" class="nav-link"
+            ><i class="fas fa-images"></i> Gallery</a
+          >
+          <a href="/HTML files/contact.html" class="nav-link active cta-button"
+            ><i class="fas fa-phone-alt"></i> Contact Us</a
+          >
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Map & Location Section -->
-  <section class="location-section">
-    <div class="container">
-      <div class="location-content">
-        <div class="location-info">
-          <h2>Visit Our Location</h2>
-          <div class="location-details">
-            <div class="location-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Address</h4>
-                <p>Kericho, Kenya</p>
-              </div>
-            </div>
-            <div class="location-item">
-              <i class="fas fa-clock"></i>
-              <div>
-                <h4>Business Hours</h4>
-                <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
-                <p>Sunday: Closed</p>
-              </div>
-            </div>
-            <div class="location-item">
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero-content">
+          <h1>Get In Touch With Our Team</h1>
+          <p class="hero-subtitle">
+            We're here to help you with printing, computer services, software
+            setup, and more. Reach out to any of our friendly staff below:
+          </p>
+
+          <div class="quick-contact">
+            <div class="quick-contact-item">
               <i class="fas fa-phone"></i>
               <div>
-                <h4>Emergency Support</h4>
-                <p>Available during business hours</p>
+                <h4>Call Us</h4>
+                <a href="tel:+254725410024">+254725 410 024</a>
+              </div>
+            </div>
+            <div class="quick-contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email Us</h4>
+                <a href="mailto:fanpagecyber@gmail.com"
+                  >fanpagecyber@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="quick-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Visit Us</h4>
+                <span>Kericho, Kenya</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="map-placeholder">
-          <div class="map-fallback">
-            <i class="fas fa-map"></i>
-            <h3>Kericho Location</h3>
-            <p>Visit us at our convenient location in Kericho</p>
-            <a href="https://maps.google.com/?q=Kericho,Kenya" class="btn btn-secondary" target="_blank">
-              <i class="fas fa-directions"></i> Get Directions
-            </a>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-section">
-          <img src="/images/logo.jpg" alt="Fanpage Printers Logo" class="footer-logo">
-          <p>Your trusted partner for printing, design, and digital solutions in Kericho, Kenya.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="form-container">
+          <h2>Send Us a Message</h2>
+          <p>
+            Have a question or need a quote? We'll get back to you within 24
+            hours.
+          </p>
 
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="index.html#about"><i class="fas fa-users"></i> About Us</a></li>
-            <li><a href="services.html"><i class="fas fa-briefcase"></i> Services</a></li>
-            <li><a href="/HTML files/home.html"><i class="fas fa-image"></i> Gallery</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope-open"></i> Contact Us</a></li>
-          </ul>
-        </div>
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formsubmit.co/kiruigideon2006@gmail.com"
+            method="POST"
+          >
+            <!-- FormSubmit Configuration -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact Form Submission - Fanpage Printers"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display: none" />
 
-        <div class="footer-section">
-          <h3>Our Services</h3>
-          <ul>
-            <li><a href="services.html"><i class="fas fa-globe"></i> Internet Cyber Café</a></li>
-            <li><a href="services.html"><i class="fas fa-pencil-ruler"></i> Graphic Design</a></li>
-            <li><a href="services.html"><i class="fab fa-windows"></i> Windows Installation</a></li>
-            <li><a href="services.html"><i class="fas fa-code"></i> Web Design</a></li>
-            <li><a href="services.html"><i class="fas fa-print"></i> Printing Services</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Contact Info</h3>
-          <ul class="contact-info">
-            <li><i class="fas fa-phone"></i>
-              <div>
-                <a href="tel:+254725410024">+254725 410 024</a><br>
-                <a href="tel:+254797617455">+254797 617 455</a>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
               </div>
-            </li>
-            <li><i class="fas fa-envelope"></i>
-              <a href="mailto:fanpagecyber@gmail.com">fanpagecyber@gmail.com</a>
-            </li>
-            <li><i class="fas fa-location-dot"></i> Kericho, Kenya</li>
-            <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
-          </ul>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="printing">Printing Services</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="windows-installation">
+                  Windows Installation
+                </option>
+                <option value="linux-installation">Linux Installation</option>
+                <option value="web-design">Web Design</option>
+                <option value="cyber-cafe">Cyber Cafe Services</option>
+                <option value="it-support">IT Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
         </div>
       </div>
+    </section>
 
-      <div class="footer-bottom">
-        <p>&copy; 2025 Fanpage Printers Limited. All rights reserved.</p>
+    <!-- Message Popup -->
+    <div id="messagePopup" class="message-popup">
+      <div class="popup-content">
+        <span class="popup-close">&times;</span>
+        <h3>Message Sent</h3>
+        <p>
+          Thank you for your message! We will get back to you within 24 hours.
+        </p>
       </div>
     </div>
-  </footer>
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <div class="section-header">
+          <h2>Meet Our Team</h2>
+          <p>
+            Our dedicated professionals are ready to assist you with all your
+            technical and creative needs
+          </p>
+        </div>
 
-  <script src="/JS files/contact2.js"></script>
-</body>
+        <div class="contact-staff-grid">
+          <!-- Staff Member 1 -->
+          <div class="staff-card">
+            <div class="staff-image">
+              <img
+                class="profile"
+                src="/images/vinny.jpeg"
+                alt="Kiplangat Ngeno - Founder & CEO"
+              />
+              <div class="staff-overlay">
+                <div class="social-links">
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="mailto:kiplangattvincent@gmail.com"
+                    aria-label="Email"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="staff-info">
+              <h3>Kiplangat Ngeno</h3>
+              <p class="staff-role">Founder & CEO</p>
+              <p class="staff-department">Lead Developer & IT Consultant</p>
 
+              <div class="contact-details">
+                <a href="tel:+254725410024" class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <span>+254725 410 024</span>
+                </a>
+                <a
+                  href="mailto:kiplangattvincent@gmail.com"
+                  class="contact-item"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <span>kiplangattvincent@gmail.com</span>
+                </a>
+              </div>
+
+              <div class="staff-bio">
+                <h4><i class="fas fa-briefcase"></i> About</h4>
+                <p>
+                  Kiplangat Ngeno is the visionary founder and CEO of Fanpage
+                  Printers Limited. As the driving force behind the company, he
+                  oversees every aspect of operations — from high-level tech
+                  strategy to client service excellence. A master in systems
+                  deployment, Linux installations, software engineering, and
+                  digital transformation, he brings bold ideas to life with
+                  precision. Known for his leadership, innovation, and hands-on
+                  expertise, Ngeno doesn't just run Fanpage — he defines its
+                  future.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Staff Member 2 -->
+          <div class="staff-card">
+            <div class="staff-image">
+              <img
+                class="profile"
+                src="/images/kevin.jpeg"
+                alt="Kipkoech Kevin - Lead Graphic Designer"
+              />
+              <div class="staff-overlay">
+                <div class="social-links">
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="mailto:evershynegraphixs@gmail.com"
+                    aria-label="Email"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="staff-info">
+              <h3>Kipkoech Kevin</h3>
+              <p class="staff-role">Lead Graphic Designer</p>
+              <p class="staff-department">Brand & Media Director</p>
+
+              <div class="contact-details">
+                <a href="tel:+254797617455" class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <span>+254797 617 455</span>
+                </a>
+                <a
+                  href="mailto:evershynegraphixs@gmail.com"
+                  class="contact-item"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <span>evershynegraphixs@gmail.com</span>
+                </a>
+              </div>
+
+              <div class="staff-bio">
+                <h4><i class="fas fa-briefcase"></i> About</h4>
+                <p>
+                  Leads all branding and creative design work at Fanpage. Expert
+                  in logo design, posters, banners, and visual storytelling
+                  through digital art. He also handles professional software
+                  installations, system optimization, and computer hardware
+                  repair & maintenance with precision and care.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Staff Member 3 -->
+          <div class="staff-card">
+            <div class="staff-image">
+              <img
+                class="profile"
+                src="/images/kirui Gideon.jpeg"
+                alt="Kirui Gideon - Tech Solutions Strategist"
+              />
+              <div class="staff-overlay">
+                <div class="social-links">
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="mailto:kiruigideon2006@gmail.com" aria-label="Email"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="staff-info">
+              <h3>Kirui Gideon</h3>
+              <p class="staff-role">Tech Solutions Strategist</p>
+              <p class="staff-department">Digital Wizard & Systems Guru</p>
+
+              <div class="contact-details">
+                <a href="tel:+254115670811" class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <span>+254115 670 811</span>
+                </a>
+                <a href="mailto:kiruigideon2006@gmail.com" class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>kiruigideon2006@gmail.com</span>
+                </a>
+              </div>
+
+              <div class="staff-bio">
+                <h4><i class="fas fa-briefcase"></i> About</h4>
+                <p>
+                  Kirui is the brain behind Fanpage's digital evolution. He
+                  handles everything from designing responsive websites and
+                  automating workflows with batch scripts, to advanced
+                  system-level tasks like Linux installations (Kali, Ubuntu,
+                  Fedora), dual-boot setups, and Android optimization using ADB.
+                  He's the reason tech works smoothly behind the scenes — a true
+                  maestro in command.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Staff Member 4 -->
+          <div class="staff-card">
+            <div class="staff-image">
+              <img
+                class="profile"
+                src="/images/humphrey.jpeg"
+                alt="Kipkoech Humphrey - System Technician"
+              />
+              <div class="staff-overlay">
+                <div class="social-links">
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="mailto:humphrey.kirui254@gmail.com"
+                    aria-label="Email"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="staff-info">
+              <h3>Kipkoech Humphrey</h3>
+              <p class="staff-role">System Strategist</p>
+              <p class="staff-department">Digital Systems Strategist</p>
+
+              <div class="contact-details">
+                <a href="tel:+254703895303" class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <span>+254703 895 303</span>
+                </a>
+                <a
+                  href="mailto:humphrey.kirui254@gmail.com"
+                  class="contact-item"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <span>humphrey.kirui254@gmail.com</span>
+                </a>
+              </div>
+
+              <div class="staff-bio">
+                <h4><i class="fas fa-briefcase"></i> About</h4>
+                <p>
+                  Humphrey is the systems technician who makes tech look easy.
+                  He's in charge of all printing operations at Fanpage, ensuring
+                  every document, photo, and banner comes out sharp and on time.
+                  From Linux and Windows installations to system recovery and
+                  diagnostics, he keeps both machines and services running
+                  smoothly. Calm, precise, and reliable — he's the engine room
+                  of operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map & Location Section -->
+    <section class="location-section">
+      <div class="container">
+        <div class="location-content">
+          <div class="location-info">
+            <h2>Visit Our Location</h2>
+            <div class="location-details">
+              <div class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Address</h4>
+                  <p>Kericho, Kenya</p>
+                </div>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Business Hours</h4>
+                  <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                  <p>Sunday: Closed</p>
+                </div>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Emergency Support</h4>
+                  <p>Available during business hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-placeholder">
+            <div class="map-fallback">
+              <i class="fas fa-map"></i>
+              <h3>Kericho Location</h3>
+              <p>Visit us at our convenient location in Kericho</p>
+              <a
+                href="https://maps.google.com/?q=Kericho,Kenya"
+                class="btn btn-secondary"
+                target="_blank"
+              >
+                <i class="fas fa-directions"></i> Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <img
+              src="/images/logo.jpg"
+              alt="Fanpage Printers Logo"
+              class="footer-logo"
+            />
+            <p>
+              Your trusted partner for printing, design, and digital solutions
+              in Kericho, Kenya.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="index.html#about"
+                  ><i class="fas fa-users"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-briefcase"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="/HTML files/home.html"
+                  ><i class="fas fa-image"></i> Gallery</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fas fa-envelope-open"></i> Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-globe"></i> Internet Cyber Café</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-pencil-ruler"></i> Graphic Design</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fab fa-windows"></i> Windows Installation</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-code"></i> Web Design</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-print"></i> Printing Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-phone"></i>
+                <div>
+                  <a href="tel:+254725410024">+254725 410 024</a><br />
+                  <a href="tel:+254797617455">+254797 617 455</a>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:fanpagecyber@gmail.com"
+                  >fanpagecyber@gmail.com</a
+                >
+              </li>
+              <li><i class="fas fa-location-dot"></i> Kericho, Kenya</li>
+              <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Fanpage Printers Limited. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/JS%20files/contact2.js"></script>
+  </body>
 </html>
