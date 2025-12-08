@@ -1,19 +1,28 @@
 {
   "version": 2,
-  "builds": [
+  "headers": [
     {
-      "src": "**/*.html",
-      "use": "@vercel/static"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/index.html"
+      "source": "/CSS%20files/:path*",
+      "destination": "/CSS files/:path*"
     },
     {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/HTML%20files/:path*",
+      "destination": "/HTML files/:path*"
+    },
+    {
+      "source": "/JS%20files/:path*",
+      "destination": "/JS files/:path*"
     }
   ]
 }
