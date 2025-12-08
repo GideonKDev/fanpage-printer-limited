@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   background-color: var(--bg-light);
   color: var(--text-dark);
   line-height: 1.6;
@@ -57,9 +57,17 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
   width: auto;
-  transition: var(--transition);
+  object-fit: contain;
+  display: block;
+  opacity: 1 !important;
+  transition: transform 0.3s ease;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
 }
 
 .logo img:hover {
@@ -152,7 +160,11 @@ header {
 .highlight {
   color: var(--primary-color);
   display: block;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -220,7 +232,8 @@ header {
   height: auto;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-hover);
-  transition: var(--transition);
+  opacity: 1 !important;
+  transition: transform 0.3s ease;
 }
 
 .hero-image img:hover {
@@ -306,7 +319,11 @@ header {
   flex-shrink: 0;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -352,13 +369,17 @@ header {
 }
 
 .service-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
 }
 
 .service-card:hover {
@@ -430,7 +451,9 @@ footer {
 
 .footer-logo {
   width: 150px;
+  height: auto;
   margin-bottom: 20px;
+  opacity: 1 !important;
 }
 
 .footer-section p {
@@ -509,7 +532,7 @@ footer {
   .service-highlight-container {
     gap: 40px;
   }
-  
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
