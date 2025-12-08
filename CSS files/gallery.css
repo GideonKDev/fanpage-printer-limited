@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   background-color: var(--bg-light);
   color: var(--text-dark);
   line-height: 1.6;
@@ -377,7 +377,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.8) 100%);
   display: flex;
   align-items: flex-end;
   padding: 20px;
@@ -679,7 +679,7 @@ footer {
   .gallery-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 30px;

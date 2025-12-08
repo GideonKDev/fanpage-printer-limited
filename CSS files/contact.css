@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   background-color: var(--bg-light);
   color: var(--text-dark);
   line-height: 1.6;
@@ -213,7 +213,7 @@ header {
   color: var(--text-dark);
 }
 
-.form-container > p {
+.form-container>p {
   color: var(--text-light);
   margin-bottom: 40px;
   font-size: 1.1rem;
@@ -249,7 +249,7 @@ header {
   border-radius: 8px;
   font-size: 1rem;
   transition: var(--transition);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .form-group input:focus,
@@ -277,7 +277,7 @@ header {
   transition: var(--transition);
   border: 2px solid transparent;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .btn-primary {
@@ -658,11 +658,11 @@ footer {
   .contact-staff-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
-  
+
   .location-content {
     gap: 30px;
   }
-  
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -802,7 +802,9 @@ select:focus,
 textarea:focus {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
-}/* Message Popup Styles */
+}
+
+/* Message Popup Styles */
 .message-popup {
   display: none;
   position: fixed;
@@ -853,6 +855,7 @@ textarea:focus {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
