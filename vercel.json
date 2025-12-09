@@ -1,28 +1,4 @@
 {
-  "version": 2,
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/CSS%20files/:path*",
-      "destination": "/CSS files/:path*"
-    },
-    {
-      "source": "/HTML%20files/:path*",
-      "destination": "/HTML files/:path*"
-    },
-    {
-      "source": "/JS%20files/:path*",
-      "destination": "/JS files/:path*"
-    }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
