@@ -1,18 +1,22 @@
 /* --- GALLERY PAGE STYLING --- */
 :root {
-  --primary-color: #1e72f2;
-  --primary-dark: #0d5bd9;
-  --secondary-color: #6e48aa;
-  --accent-color: #ff6b35;
+  --primary-color: #ff8c00; /* Dark orange */
+  --primary-dark: #ff6b35; /* Vibrant orange */
+  --secondary-color: #ffa500; /* Orange */
+  --accent-color: #ff4500; /* Red-orange */
   --text-dark: #1e1e1e;
   --text-light: #555;
   --text-lighter: #777;
-  --bg-light: #f3f6fc;
+  --bg-light: #fff8f0; /* Light orange tint */
   --bg-white: #ffffff;
   --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
   --border-radius: 12px;
   --transition: all 0.3s ease;
+  
+  /* Gradient variables */
+  --orange-gradient: linear-gradient(135deg, #ff6b35 0%, #ffa500 50%, #ff8c00 100%);
+  --orange-gradient-light: linear-gradient(135deg, #ffc078 0%, #ffd8a8 100%);
 }
 
 * {
