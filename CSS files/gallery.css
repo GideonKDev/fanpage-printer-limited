@@ -29,6 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
+button{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   background-color: var(--bg-light);

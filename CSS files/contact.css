@@ -24,11 +24,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+#service{
+  font-family: 'Josefin Sans', sans-serif;
+}
+placeholder{
+  font-family: 'Josefin Sans', sans-serif;
+}
 html {
   scroll-behavior: smooth;
 }
-
+input{
+  font-family: 'Josefin Sans', sans-serif;
+}
 body {
   font-family: 'Josefin Sans', sans-serif;
   background-color: var(--bg-light);
