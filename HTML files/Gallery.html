@@ -1,760 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shyne Printers</title>
-    <meta
-      name="description"
-      content="Professional printing, graphic design, cyber cafe, and IT services in Kericho, Kenya"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Shyne Printers Limited</title>
+  <meta name="description" content="View our portfolio of printing, graphic design, and tech solutions." />
 
-    <!-- ===== FAVICON - LETTER F ===== -->
-     <!-- Favicon for all browsers -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6b35">
-    <meta name="msapplication-TileColor" content="#ff6b35">
-    <meta name="theme-color" content="#ff6b35">
-    
-    <!-- Fallback for older browsers -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <!-- ===== END FAVICON ===== -->
+  <link rel="icon" type="image/png" href="../rd (1).png">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link rel="stylesheet" href="../CSS files/global.css" />
+  <link rel="stylesheet" href="../CSS files/gallery.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container flex-between">
+      <a href="../index.html" class="brand-logo" aria-label="Home">
+        <img src="../rd (1).png" alt="Shyne Printers" />
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="Gallery.html" class="nav-link" style="color: var(--clr-primary);">Gallery</a></li>
+          <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="sr-only">Menu</span>
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+  </header>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../CSS%20files/gallery.css" />
-  </head>
-
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="container header-container">
-        <div class="logo">
-          <a href="/index.html"
-            ><img
-              src="/rd (1).png"
-              alt="Shyne Printers Logo"
-          /></a>
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h1>Our Portfolio</h1>
+          <p>A showcase of our premium prints, digital graphics, and IT solutions.</p>
         </div>
 
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-menu-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="nav-menu">
-          <a href="/index.html" class="nav-link"
-            ><i class="fas fa-info-circle"></i> About Us</a
-          >
-          <a href="services.html" class="nav-link"
-            ><i class="fas fa-cogs"></i> Services</a
-          >
-          <a href="gallery.html" class="nav-link active"
-            ><i class="fas fa-images"></i> Gallery</a
-          >
-          <a href="contact.html" class="nav-link cta-button"
-            ><i class="fas fa-phone-alt"></i> Contact Us</a
-          >
-        </nav>
-      </div>
-    </header>
-    <!-- Gallery Hero Section -->
-    <section class="gallery-hero">
-      <div class="container">
-        <div class="gallery-hero-content">
-          <h1>Our Creative Portfolio</h1>
-          <p class="hero-subtitle">
-            Explore the quality, creativity, and technical excellence that
-            defines Shyne Printers Limited
-          </p>
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-number">500+</span>
-              <span class="stat-label">Projects Completed</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">6+</span>
-              <span class="stat-label">Service Categories</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">98%</span>
-              <span class="stat-label">Client Satisfaction</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Filter Section -->
-    <section class="gallery-filter">
-      <div class="container">
-        <div class="filter-buttons">
+        <!-- Filter Pills -->
+        <div class="gallery-filters animate-on-scroll">
           <button class="filter-btn active" data-filter="all">All Work</button>
-          <button class="filter-btn" data-filter="printing">
-            <i class="fas fa-print"></i> Printing
-          </button>
-          <button class="filter-btn" data-filter="design">
-            <i class="fas fa-pencil-ruler"></i> Graphic Design
-          </button>
-          <button class="filter-btn" data-filter="web">
-            <i class="fas fa-code"></i> Web Design
-          </button>
-          <button class="filter-btn" data-filter="it">
-            <i class="fas fa-laptop-code"></i> IT Services
-          </button>
-          <button class="filter-btn" data-filter="cyber">
-            <i class="fas fa-wifi"></i> Cyber Cafe
-          </button>
-          <button class="filter-btn" data-filter="installation">
-            <i class="fab fa-windows"></i> OS Installation
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Main Gallery Section -->
-    <section class="gallery-main" id="gallery">
-      <div class="container">
-        <!-- Printing Services Gallery -->
-        <div class="gallery-category" data-category="printing">
-          <div class="category-header">
-            <h2><i class="fas fa-print"></i> Printing Services</h2>
-            <p>
-              High-quality printing solutions for all your business and personal
-              needs
-            </p>
-          </div>
-          <div class="gallery-grid">
-            <!-- Printing Images -->
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1565514158747-0014389d8c81?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://cdn.bannerbuzz.com/media/catalog/product/u/p/updcbc02_1_1.jpg"
-                alt="Business Cards Printing"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Business Cards</h3>
-                  <p>Premium quality business card printing</p>
-                  <span class="gallery-badge">Printing</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400&h=300&fit=crop"
-                alt="Poster Printing"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Marketing Posters</h3>
-                  <p>Vibrant poster printing for events</p>
-                  <span class="gallery-badge">Printing</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1588666309990-d68f08e3d4a6?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1588666309990-d68f08e3d4a6?w=400&h=300&fit=crop"
-                alt="Brochure Printing"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Brochures & Flyers</h3>
-                  <p>Professional brochure design & print</p>
-                  <span class="gallery-badge">Printing</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1551833086-73bd99ce5d7a?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://t4.ftcdn.net/jpg/03/43/87/79/360_F_343877993_9Od0iow5UMBwbzcR3uiNUJVpUxPUe2Id.jpg"
-                alt="Banner Printing"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Large Format Banners</h3>
-                  <p>Eye-catching banner printing</p>
-                  <span class="gallery-badge">Printing</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <button class="filter-btn" data-filter="print">Printing & Branding</button>
+          <button class="filter-btn" data-filter="digital">Digital & Web</button>
         </div>
 
-        <!-- Graphic Design Gallery -->
-        <div class="gallery-category" data-category="design">
-          <div class="category-header">
-            <h2><i class="fas fa-pencil-ruler"></i> Graphic Design</h2>
-            <p>Creative visual designs that bring your brand to life</p>
-          </div>
-          <div class="gallery-grid">
-            <!-- Design Images -->
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=400&h=300&fit=crop"
-                alt="Logo Design"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Logo Design</h3>
-                  <p>Custom logo creation for brands</p>
-                  <span class="gallery-badge">Design</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=300&fit=crop"
-                alt="Brand Identity"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Brand Identity</h3>
-                  <p>Complete brand package design</p>
-                  <span class="gallery-badge">Design</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop"
-                alt="Social Media Graphics"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Social Media Graphics</h3>
-                  <p>Engaging social media content</p>
-                  <span class="gallery-badge">Design</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?w=400&h=300&fit=crop"
-                alt="Packaging Design"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Packaging Design</h3>
-                  <p>Product packaging solutions</p>
-                  <span class="gallery-badge">Design</span>
-                </div>
-              </div>
+        <!-- Masonry Grid -->
+        <div class="masonry-grid" id="gallery-grid">
+          <!-- Item 1 -->
+          <div class="gallery-item print">
+            <img src="../images/FANPAGE STICKERS_page-0001 (1).jpg" alt="Fanpage Stickers Print" loading="lazy" />
+            <div class="gallery-overlay">
+              <h3>Custom Sticker Printing</h3>
             </div>
           </div>
-        </div>
-
-        <!-- Web Design Gallery -->
-        <div class="gallery-category" data-category="web">
-          <div class="category-header">
-            <h2><i class="fas fa-code"></i> Web Design & Development</h2>
-            <p>Modern, responsive websites that drive results</p>
-          </div>
-          <div class="gallery-grid">
-            <!-- Web Design Images -->
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=300&fit=crop"
-                alt="Business Websites"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Business Websites</h3>
-                  <p>Professional business sites</p>
-                  <span class="gallery-badge">Web</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
-                alt="E-commerce Sites"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>E-commerce Solutions</h3>
-                  <p>Online store development</p>
-                  <span class="gallery-badge">Web</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
-                alt="Portfolio Websites"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Portfolio Websites</h3>
-                  <p>Personal portfolio sites</p>
-                  <span class="gallery-badge">Web</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=300&fit=crop"
-                alt="Mobile Responsive"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Mobile Responsive</h3>
-                  <p>Mobile-optimized designs</p>
-                  <span class="gallery-badge">Web</span>
-                </div>
-              </div>
+          <!-- Item 2 -->
+          <div class="gallery-item digital">
+            <img src="../images/Websites-Built-with-WordPress-1.jpg" alt="WordPress Website Design" loading="lazy" />
+            <div class="gallery-overlay">
+              <h3>Web Design & CMS</h3>
             </div>
           </div>
-        </div>
-
-        <!-- IT Services Gallery -->
-        <div class="gallery-category" data-category="it">
-          <div class="category-header">
-            <h2><i class="fas fa-laptop-code"></i> IT Support Services</h2>
-            <p>Professional IT solutions and technical support</p>
-          </div>
-          <div class="gallery-grid">
-            <!-- IT Services Images -->
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=400&h=300&fit=crop"
-                alt="Computer Repair"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Computer Repair</h3>
-                  <p>Hardware & software troubleshooting</p>
-                  <span class="gallery-badge">IT</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://tktechservices.com/cdn/shop/articles/pexels-field-engineer-147254-442150.jpg?v=1752267943&width=1100"
-            >
-              <img
-                src="https://tktechservices.com/cdn/shop/articles/pexels-field-engineer-147254-442150.jpg?v=1752267943&width=1100"
-                alt="Network Setup"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Network Setup</h3>
-                  <p>Office network installation</p>
-                  <span class="gallery-badge">IT</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop"
-                alt="Data Recovery"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Data Recovery</h3>
-                  <p>Secure data retrieval services</p>
-                  <span class="gallery-badge">IT</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://computercentre.es/wp-content/uploads/2020/05/virus_removal_1.jpg"
-            >
-              <img
-                src="https://computercentre.es/wp-content/uploads/2020/05/virus_removal_1.jpg"
-                alt="Virus Removal"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Virus Protection</h3>
-                  <p>Malware & virus removal</p>
-                  <span class="gallery-badge">IT</span>
-                </div>
-              </div>
+          <!-- Item 3 -->
+          <div class="gallery-item digital">
+            <img src="../images/WhatsApp Image 2025-05-28 at 08.29.18_6d95b33c.jpg" alt="Digital Graphics" loading="lazy" />
+            <div class="gallery-overlay">
+              <h3>Social Media Assets</h3>
             </div>
           </div>
-        </div>
-
-        <!-- Cyber Cafe Gallery -->
-        <div class="gallery-category" data-category="cyber">
-          <div class="category-header">
-            <h2><i class="fas fa-wifi"></i> Cyber Cafe Services</h2>
-            <p>
-              Modern cyber cafe with high-speed internet and comfortable
-              workspace
-            </p>
-          </div>
-          <div class="gallery-grid">
-            <!-- Cyber Cafe Images -->
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=400&h=300&fit=crop"
-                alt="Modern Cyber Cafe"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Modern Workspace</h3>
-                  <p>Comfortable computer stations</p>
-                  <span class="gallery-badge">Cyber</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://img.freepik.com/premium-vector/high-speed-internet-concept-network-smartphone-computer-broadband-networks-speed-isometric_82984-791.jpg"
-            >
-              <img
-                src="https://img.freepik.com/premium-vector/high-speed-internet-concept-network-smartphone-computer-broadband-networks-speed-isometric_82984-791.jpg"
-                alt="High-Speed Internet"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>High-Speed Internet</h3>
-                  <p>Reliable internet access</p>
-                  <span class="gallery-badge">Cyber</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=400&h=300&fit=crop"
-                alt="Printing Station"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Printing Services</h3>
-                  <p>On-demand printing available</p>
-                  <span class="gallery-badge">Cyber</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://www.shutterstock.com/image-photo/nobody-customer-care-workstation-multiple-600nw-2144787073.jpg"
-            >
-              <img
-                src="https://www.shutterstock.com/image-photo/nobody-customer-care-workstation-multiple-600nw-2144787073.jpg"
-                alt="Comfortable Environment"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Comfortable Environment</h3>
-                  <p>Productive workspace setup</p>
-                  <span class="gallery-badge">Cyber</span>
-                </div>
-              </div>
+          <!-- Item 4 -->
+          <div class="gallery-item digital">
+            <img src="../images/web-graphics-maker-thumb.jpg" alt="Web Graphics" loading="lazy" />
+            <div class="gallery-overlay">
+              <h3>Digital Ad Creatives</h3>
             </div>
           </div>
-        </div>
-
-        <!-- OS Installation Gallery -->
-        <div class="gallery-category" data-category="installation">
-          <div class="category-header">
-            <h2>
-              <i class="fab fa-windows"></i> Operating System Installation
-            </h2>
-            <p>Professional OS installation and optimization services</p>
+          <!-- Item 5 -->
+          <div class="gallery-item print">
+            <img src="../images/5ff67229d8792f09a0a0b2ab_cover-exaqueo-p-1600.jpeg" alt="Brand Identity Print" loading="lazy" />
+            <div class="gallery-overlay">
+              <h3>Corporate Branding</h3>
+            </div>
           </div>
-          <div class="gallery-grid">
-            <!-- OS Installation Images -->
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?w=400&h=300&fit=crop"
-                alt="Windows Installation"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Windows OS</h3>
-                  <p>Windows 10/11 installation</p>
-                  <span class="gallery-badge">Installation</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop"
-                alt="Linux Installation"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Linux Distributions</h3>
-                  <p>Ubuntu, Kali, Fedora setup</p>
-                  <span class="gallery-badge">Installation</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600&h=400&fit=crop"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400&h=300&fit=crop"
-                alt="Dual Boot Setup"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Dual Boot Systems</h3>
-                  <p>Windows + Linux setup</p>
-                  <span class="gallery-badge">Installation</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="gallery-item"
-              data-src="https://media.istockphoto.com/id/1348936844/photo/update-concept-software-upgrade.jpg?s=612x612&w=0&k=20&c=mtLAPwzo3nG9PNZB4RBCrnLiDDLd3lnUhxH_uU1Ue08="
-            >
-              <img
-                src="https://media.istockphoto.com/id/1348936844/photo/update-concept-software-upgrade.jpg?s=612x612&w=0&k=20&c=mtLAPwzo3nG9PNZB4RBCrnLiDDLd3lnUhxH_uU1Ue08="
-                alt="Software Installation"
-              />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <h3>Software Setup</h3>
-                  <p>Essential software installation</p>
-                  <span class="gallery-badge">Installation</span>
-                </div>
-              </div>
+          <!-- Item 6 -->
+          <div class="gallery-item digital">
+            <img src="../images/maxresdefault.jpg" alt="System Setup" loading="lazy" />
+            <div class="gallery-overlay">
+              <h3>Tech & OS Setups</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- Call to Action Section -->
-    <section class="gallery-cta">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Ready to Start Your Project?</h2>
-          <p>Let's bring your ideas to life with our professional services</p>
-          <div class="cta-buttons">
-            <a href="" class="btn btn-primary">
-              <i class="fas fa-paper-plane"></i> Get In Touch
-            </a>
-            <a href="https://evershinegraphics.vercel.app/#gallery" class="btn btn-secondary">
-              <i class="fas fa-info-circle"></i> View complete Gallery
-            </a>
-          </div>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
+        <i class="ph ph-x"></i>
+      </button>
+      <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="../rd (1).png" alt="Shyne Printers" style="height: 48px; margin-bottom: 1.5rem; filter: brightness(0) invert(1);" />
+          <p>Your trusted partner for printing, design, and digital solutions in Kericho, Kenya.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-section">
-            <img
-              src="/rd (1).png"
-              alt="Shyne Printers Logo"
-              class="footer-logo"
-            />
-            <p>
-              Your trusted partner for printing, design, and digital solutions
-              in Kericho, Kenya.
-            </p>
-            <div class="social-links">
-              <a href="#" aria-label="Facebook"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" aria-label="Twitter"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" aria-label="Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" aria-label="WhatsApp"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <a href="/index.html"><i class="fas fa-home"></i> Home</a>
-              </li>
-              <li>
-                <a href="/index.html#about"
-                  ><i class="fas fa-users"></i> About Us</a
-                >
-              </li>
-              <li>
-                <a href="/HTML files/services.html"
-                  ><i class="fas fa-briefcase"></i> Services</a
-                >
-              </li>
-              <li>
-                <a href="/HTML files/gallery.html"
-                  ><i class="fas fa-image"></i> Gallery</a
-                >
-              </li>
-              <li>
-                <a href="/HTML files/contact.html"
-                  ><i class="fas fa-envelope-open"></i> Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h3>Our Services</h3>
-            <ul>
-              <li>
-                <a href="services.html"
-                  ><i class="fas fa-globe"></i> Internet Cyber Café</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fas fa-pencil-ruler"></i> Graphic Design</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fab fa-windows"></i> Windows Installation</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fas fa-code"></i> Web Design</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fas fa-print"></i> Printing Services</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h3>Contact Info</h3>
-            <ul class="contact-info">
-              <li>
-                <i class="fas fa-phone"></i>
-                <div>
-                  <a href="tel:+254703895303">+254703 895 303</a><br />
-                  <a href="tel:+254797617455">+254797 617 455</a>
-                </div>
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:evershynegraphixs@gmail.com"
-                  >evershynegraphixs@gmail.com</a
-                >
-              </li>
-              <li><i class="fas fa-location-dot"></i> Kericho, Kenya</li>
-              <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
-            </ul>
-          </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
-
-        <div class="footer-bottom">
-          <p>&copy; 2025 Shyne Printers Limited. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox-modal" class="lightbox-modal">
-      <div class="lightbox-content">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-image" src="" alt="" />
-        <div class="lightbox-caption">
-          <h3 class="lightbox-title"></h3>
-          <p class="lightbox-description"></p>
-        </div>
-        <button class="lightbox-nav lightbox-prev">&#10094;</button>
-        <button class="lightbox-nav lightbox-next">&#10095;</button>
       </div>
     </div>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
-    <script src="../JS%20files/gallery.js"></script>
-  </body>
+  <script src="../JS files/global.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Gallery Filtering
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active state
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          galleryItems.forEach(item => {
+            if (filterValue === 'all' || item.classList.contains(filterValue)) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Lightbox functionality
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxClose = document.getElementById('lightbox-close');
+
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const imgSrc = item.querySelector('img').src;
+          lightboxImg.src = imgSrc;
+          lightbox.classList.add('active');
+          document.body.style.overflow = 'hidden'; // Prevent background scroll
+        });
+      });
+
+      const closeLightbox = () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      };
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      
+      // Close on clicking outside the image
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+      
+      // Close on Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+          closeLightbox();
+        }
+      });
+    });
+  </script>
+</body>
 </html>

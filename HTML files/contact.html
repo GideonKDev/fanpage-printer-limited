@@ -1,609 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shyne Printers</title>
-    <meta
-      name="description"
-      content="Professional printing, graphic design, cyber cafe, and IT services in Kericho, Kenya"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Shyne Printers Limited</title>
+  <meta name="description" content="Get in touch with Shyne Printers Limited for printing, design, and IT solutions in Kericho." />
 
-    <!-- ===== FAVICON - LETTER F ===== -->
-     <!-- Favicon for all browsers -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6b35">
-    <meta name="msapplication-TileColor" content="#ff6b35">
-    <meta name="theme-color" content="#ff6b35">
-    
-    <!-- Fallback for older browsers -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <!-- ===== END FAVICON ===== -->
+  <link rel="icon" type="image/png" href="../rd (1).png">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link rel="stylesheet" href="../CSS files/global.css" />
+  <link rel="stylesheet" href="../CSS files/contact.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container flex-between">
+      <a href="../index.html" class="brand-logo" aria-label="Home">
+        <img src="../rd (1).png" alt="Shyne Printers" />
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="btn btn-primary" style="background: var(--clr-primary-hover);">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="sr-only">Menu</span>
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+  </header>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="/CSS files/contact.css" />
-  </head>
-
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="container header-container">
-        <div class="logo">
-          <a href="/index.html"
-            ><img
-              src="/rd (1).png"
-              alt="Shyne Printers Logo"
-          /></a>
+  <main>
+    <section class="section-padding" style="background: var(--clr-bg); padding-top: 4rem;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h1>Let's Work Together</h1>
+          <p>Have a project in mind or need assistance? Reach out to us.</p>
         </div>
 
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-menu-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="contact-layout">
+          <!-- Form Wrapper -->
+          <div class="contact-form-wrapper animate-on-scroll">
+            <h2>Send a Message</h2>
+            <p>We'll get back to you as soon as possible.</p>
+            
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <input type="text" id="name" name="name" class="form-control" placeholder=" " required />
+                <label for="name" class="form-label">Full Name</label>
+              </div>
+              
+              <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control" placeholder=" " required />
+                <label for="email" class="form-label">Email Address</label>
+              </div>
 
-        <nav class="nav-menu">
-          <a href="/index.html" class="nav-link"
-            ><i class="fas fa-info-circle"></i> About Us</a
-          >
-          <a href="/HTML files/services.html" class="nav-link"
-            ><i class="fas fa-cogs"></i> Services</a
-          >
-          <a href="/HTML files/Gallery.html" class="nav-link"
-            ><i class="fas fa-images"></i> Gallery</a
-          >
-          <a href="/HTML files/contact.html" class="nav-link active cta-button"
-            ><i class="fas fa-phone-alt"></i> Contact Us</a
-          >
-        </nav>
-      </div>
-    </header>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder=" " />
+                <label for="phone" class="form-label">Phone Number (Optional)</label>
+              </div>
+              
+              <div class="form-group">
+                <textarea id="message" name="message" class="form-control" placeholder=" " required></textarea>
+                <label for="message" class="form-label">How can we help?</label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <div class="spinner"></div>
+              </button>
+            </form>
+          </div>
 
-    <!-- Contact Hero Section -->
-    <section class="contact-hero">
-      <div class="container">
-        <div class="contact-hero-content">
-          <h1>Get In Touch With Our Team</h1>
-          <p class="hero-subtitle">
-            We're here to help you with printing, computer services, software
-            setup, and more. Reach out to any of our friendly staff below:
-          </p>
-
-          <div class="quick-contact">
-            <div class="quick-contact-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <h4>Call Us</h4>
-                <a href="tel:+254797617544">+254797 617 544</a>
+          <!-- Contact Info Wrapper -->
+          <div class="contact-info-wrapper animate-on-scroll" style="transition-delay: 0.1s;">
+            <div class="info-cards">
+              <div class="info-card">
+                <i class="ph-fill ph-phone-call"></i>
+                <h3>Call Us</h3>
+                <p><a href="tel:+254703895303">+25470 389 5303</a></p>
+                <p><a href="tel:+254797617455">+25479 761 7455</a></p>
+              </div>
+              <div class="info-card">
+                <i class="ph-fill ph-envelope-open"></i>
+                <h3>Email Us</h3>
+                <p><a href="mailto:evershynegraphixs@gmail.com">evershynegraphixs@gmail.com</a></p>
+              </div>
+              <div class="info-card">
+                <i class="ph-fill ph-map-pin"></i>
+                <h3>Location</h3>
+                <p>Kericho, Kenya</p>
+              </div>
+              <div class="info-card">
+                <i class="ph-fill ph-clock"></i>
+                <h3>Hours</h3>
+                <p>Mon - Sat</p>
+                <p>8:00 AM - 8:00 PM</p>
               </div>
             </div>
-            <div class="quick-contact-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h4>Email Us</h4>
-                <a href="mailto:evershynegraphixs@gmail.com"
-                  >evershynegraphixs@gmail.com</a
-                >
-              </div>
-            </div>
-            <div class="quick-contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Visit Us</h4>
-                <span>Kericho, Kenya</span>
-              </div>
+
+            <!-- Map Container -->
+            <div class="map-container">
+              <!-- Using standard Google Maps embed for Kericho, Kenya -->
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63836.319760777555!2d35.25304642287818!3d-0.369528766158784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182a5e8e3d64dfd9%3A0xcb1b516805128ff5!2sKericho!5e0!3m2!1sen!2ske!4v1684307521453!5m2!1sen!2ske" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
-      <div class="container">
-        <div class="form-container">
-          <h2>Send Us a Message</h2>
-          <p>
-            Have a question or need a quote? We'll get back to you within 24
-            hours.
-          </p>
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
 
-          <form
-            class="contact-form"
-            id="contactForm"
-            action="https://formsubmit.co/kiruigideon2006@gmail.com"
-            method="POST"
-          >
-            <!-- FormSubmit Configuration -->
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Contact Form Submission - Shyne Printers"
-            />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="text" name="_honey" style="display: none" />
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" />
-            </div>
-
-            <div class="form-group">
-              <label for="service">Service Needed</label>
-              <select id="service" name="service">
-                <option value="">Select a service</option>
-                <option value="printing">Printing Services</option>
-                <option value="graphic-design">Graphic Design</option>
-                <option value="windows-installation">
-                  Windows Installation
-                </option>
-                <option value="linux-installation">Linux Installation</option>
-                <option value="web-design">Web Design</option>
-                <option value="cyber-cafe">Cyber Cafe Services</option>
-                <option value="it-support">IT Support</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-                placeholder="Tell us about your project or inquiry..."
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-          </form>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="../rd (1).png" alt="Shyne Printers" style="height: 48px; margin-bottom: 1.5rem; filter: brightness(0) invert(1);" />
+          <p>Your trusted partner for printing, design, and digital solutions in Kericho, Kenya.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <!-- Message Popup -->
-    <div id="messagePopup" class="message-popup">
-      <div class="popup-content">
-        <span class="popup-close">&times;</span>
-        <h3>Message Sent</h3>
-        <p>
-          Thank you for your message! We will get back to you within 24 hours.
-        </p>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Evershynegraphixs Limited. All rights reserved.</p>
       </div>
     </div>
-    <!-- Team Section -->
-    <section class="team-section" id="team">
-      <div class="container">
-        <div class="section-header">
-          <h2>Meet Our Team</h2>
-          <p>
-            Our dedicated professionals are ready to assist you with all your
-            technical and creative needs
-          </p>
-        </div>
+  </footer>
 
-        <div class="contact-staff-grid">
-          <!-- Staff Member 1 -->
-          <!-- <div class="staff-card">
-            <div class="staff-image">
-              <img
-                class="profile"
-                src="/images/vinny.jpeg"
-                alt="Kiplangat Ngeno - Founder & CEO"
-              />
-              <div class="staff-overlay">
-                <div class="social-links">
-                  <a href="#" aria-label="LinkedIn"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                  <a href="#" aria-label="Twitter"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    href="mailto:kiplangattvincent@gmail.com"
-                    aria-label="Email"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- <div class="staff-info">
-              <h3>Kiplangat Ngeno</h3>
-              <p class="staff-role">Founder & CEO</p>
-              <p class="staff-department">Lead Developer & IT Consultant</p>
+  <script src="../JS files/global.js"></script>
+  <script>
+    // Form submission simulation
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      
+      const form = e.target;
+      const submitBtn = document.getElementById('submitBtn');
+      
+      // UI Loading state
+      submitBtn.classList.add('loading');
+      submitBtn.disabled = true;
 
-              <div class="contact-details">
-                <a href="tel:+254725410024" class="contact-item">
-                  <i class="fas fa-phone"></i>
-                  <span>+254725 410 024</span>
-                </a>
-                <a
-                  href="mailto:kiplangattvincent@gmail.com"
-                  class="contact-item"
-                >
-                  <i class="fas fa-envelope"></i>
-                  <span>kiplangattvincent@gmail.com</span>
-                </a>
-              </div>
+      // Simulate API call delay
+      setTimeout(() => {
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+        
+        // Show success toast
+        showToast('Message sent successfully! We will get back to you shortly.');
+        
+        // Reset form
+        form.reset();
+      }, 1500);
+    }
 
-              <div class="staff-bio">
-                <h4><i class="fas fa-briefcase"></i> About</h4>
-                <p>
-                  Kiplangat Ngeno is the visionary founder and CEO of Shyne
-                  Printers Limited. As the driving force behind the company, he
-                  oversees every aspect of operations — from high-level tech
-                  strategy to client service excellence. A master in systems
-                  deployment, Linux installations, software engineering, and
-                  digital transformation, he brings bold ideas to life with
-                  precision. Known for his leadership, innovation, and hands-on
-                  expertise, Ngeno doesn't just run Shyne — he defines its
-                  future.
-                </p>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Staff Member 2 -->
-          <div class="staff-card">
-            <div class="staff-image">
-              <img
-                class="profile"
-                src="/images/kevin.jpeg"
-                alt="Kipkoech Kevin - Lead Graphic Designer"
-              />
-              <div class="staff-overlay">
-                <div class="social-links">
-                  <a href="#" aria-label="LinkedIn"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                  <a href="#" aria-label="Twitter"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    href="mailto:evershynegraphixs@gmail.com"
-                    aria-label="Email"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="staff-info">
-              <h3>Kipkoech Kevin</h3>
-              <p class="staff-role">Founder, Creative Director</p>
-              <p class="staff-department">Brand & Media Director</p>
-
-              <div class="contact-details">
-                <a href="tel:+254797617455" class="contact-item">
-                  <i class="fas fa-phone"></i>
-                  <span>+254797 617 455</span>
-                </a>
-                <a
-                  href="mailto:evershynegraphixs@gmail.com"
-                  class="contact-item"
-                >
-                  <i class="fas fa-envelope"></i>
-                  <span>evershynegraphixs@gmail.com</span>
-                </a>
-              </div>
-
-              <div class="staff-bio">
-                <h4><i class="fas fa-briefcase"></i> About</h4>
-                <p>
-                  Leads all branding and creative design work at Shyne Printers. Expert
-                  in logo design, posters, banners, and visual storytelling
-                  through digital art. He also handles professional software
-                  installations, system optimization, and computer hardware
-                  repair & maintenance with precision and care.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Staff Member 3 -->
-          <!-- <div class="staff-card">
-            <div class="staff-image">
-              <img
-                class="profile"
-                src="/images/kirui Gideon.jpeg"
-                alt="Kirui Gideon - Tech Solutions Strategist"
-              />
-              <div class="staff-overlay">
-                <div class="social-links">
-                  <a href="#" aria-label="LinkedIn"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                  <a href="#" aria-label="Twitter"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a href="mailto:kiruigideon2006@gmail.com" aria-label="Email"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="staff-info">
-              <h3>Kirui Gideon</h3>
-              <p class="staff-role">Tech Solutions Strategist</p>
-              <p class="staff-department">Digital Wizard & Systems Guru</p>
-
-              <div class="contact-details">
-                <a href="tel:+254115670811" class="contact-item">
-                  <i class="fas fa-phone"></i>
-                  <span>+254115 670 811</span>
-                </a>
-                <a href="mailto:kiruigideon2006@gmail.com" class="contact-item">
-                  <i class="fas fa-envelope"></i>
-                  <span>kiruigideon2006@gmail.com</span>
-                </a>
-              </div>
-
-              <div class="staff-bio">
-                <h4><i class="fas fa-briefcase"></i> About</h4>
-                <p>
-                  Kirui is the brain behind Shyne's digital evolution. He
-                  handles everything from designing responsive websites and
-                  automating workflows with batch scripts, to advanced
-                  system-level tasks like Linux installations (Kali, Ubuntu,
-                  Fedora), dual-boot setups, and Android optimization using ADB.
-                  He's the reason tech works smoothly behind the scenes — a true
-                  maestro in command.
-                </p>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Staff Member 4 -->
-          <div class="staff-card">
-            <div class="staff-image">
-              <img
-                class="profile"
-                src="/images/humphrey.jpeg"
-                alt="Kipkoech Humphrey"
-              />
-              <div class="staff-overlay">
-                <div class="social-links">
-                  <a href="#" aria-label="LinkedIn"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                  <a href="#" aria-label="Twitter"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    href="mailto:humphrey.kirui254@gmail.com"
-                    aria-label="Email"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="staff-info">
-              <h3>Kipkoech Humphrey</h3>
-              <p class="staff-role">Co-Founder</p>
-              <p class="staff-department">Digital Solutions Expert</p>
-
-              <div class="contact-details">
-                <a href="tel:+254703895303" class="contact-item">
-                  <i class="fas fa-phone"></i>
-                  <span>+254703 895 303</span>
-                </a>
-                <a
-                  href="mailto:humtech254@gmail.com"
-                  class="contact-item"
-                >
-                  <i class="fas fa-envelope"></i>
-                  <span>humtech254@gmail.com</span>
-                </a>
-              </div>
-
-              <div class="staff-bio">
-                <h4><i class="fas fa-briefcase"></i> About</h4>
-                <p>
-                  Humphrey serves as Co-Founder and Technical Director of our premier Cyber Cafe, 
-                  established through a strategic partnership that combines technical expertise with business acumen. 
-                  As the technology visionary of the partnership, he oversees all digital infrastructure,
-                   system implementations, and technical operations. His leadership ensures the cafe delivers 
-                   cutting-edge services while maintaining operational excellence and customer satisfaction.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Map & Location Section -->
-    <section class="location-section">
-      <div class="container">
-        <div class="location-content">
-          <div class="location-info">
-            <h2>Visit Our Location</h2>
-            <div class="location-details">
-              <div class="location-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                  <h4>Address</h4>
-                  <p>Kericho, Kenya</p>
-                </div>
-              </div>
-              <div class="location-item">
-                <i class="fas fa-clock"></i>
-                <div>
-                  <h4>Business Hours</h4>
-                  <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
-                  <p>Sunday: Closed</p>
-                </div>
-              </div>
-              <div class="location-item">
-                <i class="fas fa-phone"></i>
-                <div>
-                  <h4>Emergency Support</h4>
-                  <p>Available during business hours</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="map-placeholder">
-            <div class="map-fallback">
-              <i class="fas fa-map"></i>
-              <h3>Kericho Location</h3>
-              <p>Visit us at our convenient location in Kericho</p>
-              <a
-                href="https://maps.google.com/?q=Kericho,Kenya"
-                class="btn btn-secondary"
-                target="_blank"
-              >
-                <i class="fas fa-directions"></i> Get Directions
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-section">
-            <img
-              src="/rd (1).png"
-              alt="Shyne Printers Logo"
-              class="footer-logo"
-            />
-            <p>
-              Your trusted partner for printing, design, and digital solutions
-              in Kericho, Kenya.
-            </p>
-            <div class="social-links">
-              <a href="#" aria-label="Facebook"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" aria-label="Twitter"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" aria-label="Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" aria-label="WhatsApp"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <a href="index.html"><i class="fas fa-home"></i> Home</a>
-              </li>
-              <li>
-                <a href="index.html#about"
-                  ><i class="fas fa-users"></i> About Us</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fas fa-briefcase"></i> Services</a
-                >
-              </li>
-              <li>
-                <a href="/HTML files/home.html"
-                  ><i class="fas fa-image"></i> Gallery</a
-                >
-              </li>
-              <li>
-                <a href="contact.html"
-                  ><i class="fas fa-envelope-open"></i> Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h3>Our Services</h3>
-            <ul>
-              <li>
-                <a href="services.html"
-                  ><i class="fas fa-globe"></i> Internet Cyber Café</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fas fa-pencil-ruler"></i> Graphic Design</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fab fa-windows"></i> Windows Installation</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fas fa-code"></i> Web Design</a
-                >
-              </li>
-              <li>
-                <a href="services.html"
-                  ><i class="fas fa-print"></i> Printing Services</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h3>Contact Info</h3>
-            <ul class="contact-info">
-              <li>
-                <i class="fas fa-phone"></i>
-                <div>
-                 <a href="tel:+254703895303">+254703 895 303</a><br />
-                  <a href="tel:+254797617455">+254797 617 455</a>
-                </div>
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:evershynegraphixs@gmail.com"
-                  >evershynegraphixs@gmail.com</a
-                >
-              </li>
-              <li><i class="fas fa-location-dot"></i> Kericho, Kenya</li>
-              <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>&copy; 2025 Evershynegraphixs Printers Limited. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="../JS%20files/contact2.js"></script>
-  </body>
+    // Toast Notification Logic
+    function showToast(message) {
+      const container = document.getElementById('toastContainer');
+      
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.innerHTML = `
+        <i class="ph-fill ph-check-circle"></i>
+        <span>${message}</span>
+      `;
+      
+      container.appendChild(toast);
+      
+      // Trigger animation
+      setTimeout(() => toast.classList.add('show'), 10);
+      
+      // Remove after 4 seconds
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300); // Wait for transition
+      }, 4000);
+    }
+  </script>
+</body>
 </html>
